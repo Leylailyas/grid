@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.masonry {grid-area: Masonry I;}
+.flexible{grid-area: Flexible breath;}
+.domorder{grid-area: Dom Order;}
+.responsive{grid-area: Responsive;}
+.fluid{grid-area: Fluid;}
+.masonry2{grid-area: Masonry II;}
+.overlab{grid-area: Overlab;}
+.explicitly{grid-area: Explicitly Placed;}
+.namedtracks{grid-area: Named Trancs;}
+.negativespace{grid-area: Negative space;}
+.masonry3{grid-area: Masonry III;}
+
+.grid-container {
+    display: grid ;
+    grid-template-areas:
+      'masonry1 masonry1 responsive overlab overlab overlab'
+      'masonry1 masonry1 fluid explicitly explicitly negativespace'
+      'flexible flexible masonry2 explicitly explicitly masonry3'
+      
+      ;
+    gap: 20px;
+    background-color: blue;
+    padding: 20px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px ;
+    font-size: 20px;
+  }
+
+                                    
